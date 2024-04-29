@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Calcular IMC</title>
+</head>
+
+<body>
+   
+    <main id="container">
+        <section id="img">
+            <img src="./assets/imc.png" alt="imagem treinando">
+        </section>
+
+        <section id="calculator">
+            <form id="form">
+               
+                <div class="media-social">
+                    <a href="https://github.com/GuilhermeLC23" target="_blank" 
+                     id="img-me-social">
+                     <img src="./assets/icon-github.png">
+                    </a>
+                
+                    <a href="https://www.linkedin.com/in/guilherme-link-corbellini-49686b264/" target="_blank"
+                        id="img-me-social">
+                        <img src="./assets/icon-linkedin.png"></a>
+                   
+                    </div>
+                   
+                   
+                   
+                   
+                
+                
+                <h1 id="title">
+                    Calculadora - IMC
+                </h1>
+                <a href="https://www.instagram.com/glc_dev_developer/" target="_blank" id="insta">GLC</a>
+
+                <div class="input-box">
+                    <label for="weight">
+                        Peso em KG
+                    </label>
+
+                    <div class="input-field">
+                        <img src="./assets/icons-weight.png" alt="" class="fa-solid">
+                        <input type="number" id="weight" required>
+                        <span>
+                            KG
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                        Altura em metros
+                    </label>
+
+                    <div class="input-field">
+                        <img src="./assets/icons-ruler.png" width="25px" alt="fa-solid">
+                        <input type="number" step="0.01" id="height" required>
+                        <span>
+                            M
+                        </span>
+                    </div>
+                </div>
+
+                <button id="calculate">
+                    Calcular
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="result">
+                    <div id="bmi">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="description">
+                        <span></span>
+                    </div>
+                </div>
+
+                <div id="more_info">
+                    <a href="https://www.tuasaude.com/imc/" target="_blank">
+                        Informações sobre IMC
+                    </a>
+                </div>
+        </section>
+
+    </main>
+
+</body>
+<script src="./script.js"></script>
+
+</html>
